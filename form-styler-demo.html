@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap, from Twitter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le styles -->
+		<link href="less/bootstrap.css" rel="stylesheet">
+		<link href="docs/assets/css/docs.css" rel="stylesheet">
+		<link href="docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+		</style>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/jquery.formstyler.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('input, select').styler();
+				})
+			})(jQuery)
+		</script>
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+
+	<body>
+
+		<header class="jumbotron subhead" id="overview">
+			<div class="container">
+				<h1>Form Styler for Bootstrap</h1>
+				<p class="lead">
+					Стилизация форм в twitter Bootstrap. За основу взят <a href="http://dimox.name/jquery-form-styler/">Form Styler by Dimox</a>
+				</p>
+			</div>
+		</header>
+
+		<div class="container">
+			<h2>Подключение</h2>
+			<ol>
+			  <li>Извлечь архив в папку с Twitter Bootstrap</li>
+			  <li>Добавить строку <code>@import "form-styler.less";</code> в конец файла bootstrap.less</li>
+			  <li>Скомпилировать bootstrap.less</li>
+			  <li>Подключить js скрипты</li>
+			</ol>
+			<pre class="prettyprint linenums">
+&lt;script src="js/jquery.formstyler.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  (function($) {
+    $(function() {
+      $('input, select').styler();
+    })
+  })(jQuery)
+&lt;/script&gt;</pre>
+
+
+			<h2>Select</h2>
+			<p>
+				Выпадающий список
+			</p>
+			<div class="bs-docs-example">
+				<select>
+					<option>-- Выберите --</option>
+					<option>Пункт 1</option>
+					<option>Пункт 2</option>
+					<option>Какой-то пункт с очень длинным текстом, не влезающим в одну строку</option>
+					<option>Пункт 4</option>
+					<option>Пункт 5</option>
+				</select>
+			</div>
+
+			<h2>File</h2>
+			<p>
+				Поле для выбора файла
+			</p>
+			<div class="bs-docs-example">
+				<input type="file" name="">
+			</div>
+
+			<h2>Radio</h2>
+			<p>
+				Радиокнопки
+			</p>
+			<div class="bs-docs-example">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" value="option1" checked="checked">
+					Вариант 1 </label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" value="option2" disabled="disabled">
+					Вариант 2 </label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" value="option2">
+					Вариант 3 </label>
+			</div>
+
+			<h2>Checkbox</h2>
+			<p>
+				Флажки
+			</p>
+			<div class="bs-docs-example">
+				<label class="checkbox">
+					<input type="checkbox" value="" checked="checked">
+					Вариант 1 </label>
+				<label class="checkbox">
+					<input type="checkbox" value="" disabled="disabled">
+					Вариант 2 </label>
+				<label class="checkbox">
+					<input type="checkbox" value="">
+					Вариант 3 </label>
+			</div>
+
+			<!-- Main hero unit for a primary marketing message or call to action -->
+			<div>
+
+			</div>
+
+		</div>
+		<!-- /container -->
+
+		<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script src="docs/assets/js/jquery.js"></script>
+	<script src="docs/assets/js/google-code-prettify/prettify.js"></script>
+	<script src="docs/assets/js/bootstrap-transition.js"></script>
+	<script src="docs/assets/js/bootstrap-alert.js"></script>
+	<script src="docs/assets/js/bootstrap-modal.js"></script>
+	<script src="docs/assets/js/bootstrap-dropdown.js"></script>
+	<script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+	<script src="docs/assets/js/bootstrap-tab.js"></script>
+	<script src="docs/assets/js/bootstrap-tooltip.js"></script>
+	<script src="docs/assets/js/bootstrap-popover.js"></script>
+	<script src="docs/assets/js/bootstrap-button.js"></script>
+	<script src="docs/assets/js/bootstrap-collapse.js"></script>
+	<script src="docs/assets/js/bootstrap-carousel.js"></script>
+	<script src="docs/assets/js/bootstrap-typeahead.js"></script>
+	<script src="docs/assets/js/bootstrap-affix.js"></script>
+	<script src="docs/assets/js/application.js"></script>
+
+	</body>
+</html>
